@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>POGO7 - POLOS</title>
+    </head>
+
+    <body>
+
+        <div id="bloc_page">
+
+
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="images/Pogo7_logo.png" alt="Logo Pogo7"/>
+                        <h1>Pogo 7</h1>
+                    </div>
+                    <h2>Createur de pogo</h2>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Pogo7_accueil.html">Accueil</a></li>
+                        <li><a href="Pogo7_membres.html">Membres</a></li>
+                        <li><a href="Pogo7_evenements.html">évenements</a></li>
+                        <li><a href="Pogo7_polos.html">polos</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <form method="post" action="traitement.php">
+                    <h1><img src="images/Fleche_Grise.png" alt="flèche" class="icp_categorie" height="20" width="40" />Personnaliser votre polo POGO7 :</h1>
+                    <p>
+                        <label for="pseudo">Votre Surnom</label> : <input type="text" name="pseudo" id="pseudo" placeholder="Ex : PogoKing" maxlength="14" required/>
+                    </p>
+                    <p>
+                        <label for="couleur">Couleur de votre surnom</label> : <input type="color" name="couleur" id="couleur" />
+                    </p>
+                    <p>
+                    Cochez les ajustements à faire sur votre polo POGO7 :<br />
+                    <input type="checkbox" name="ajustements" id="coudières" /> <label for="coudières">Renforcement des coudières</label><br />
+                    <input type="checkbox" name="ajustements" id="hydrophobe" /> <label for="hydrophobe">Matière hydrophobe</label><br />
+                    <input type="checkbox" name="ajustements" id="Manche" /> <label for="Manche">Manche sérrante au niveau du bibi</label><br />
+                    <input type="checkbox" name="ajustements" id="V" /> <label for="V">Polo taillé en V pour assurer au MAX</label>
+                    </p>
+                    <h1><img src="images/Fleche_Grise.png" alt="flèche" class="icp_categorie" height="20" width="40" />Infos sur vous :</h1>
+                    <p>
+                        <label for="pays">Quel taille voulez vous pour le polo ?</label><br />
+                        <select name="pays" id="pays">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="ALPHA">ALPHA</option>
+                            <option value="MAXIME">MAXIME</option>
+                            <option value="DIEU">DIEU</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mail">Votre adress e-mail</label> : <input type="e-mail" name="mail" id="mail" placeholder="Ex : Alpha@pogo.fr" required/>
+                    <p><input type="submit" value="Devenir un Alpha" /></p>
+                </form>
+            </section>
+
+            <footer>
+                <div id="dernier_pogo">
+                    <h1>Notre dernière pogo</h1>
+                    <p>Il faisait sombre, on été dans une grotte, celle du Yéti. Au début tout été calme est paisible. Le club arriva dans sa totalité, tout est devenu incontrolabe, la soirée commencé enfin. </p>
+
+                </div>
+                <div id="photo_club">
+                    <h1>Les photos :</h1>
+                </div>
+                 <div id="les_sponsors">
+                    <h1>Nos sponsors :</h1>
+                    <div id="listes_sponsors">
+                        <ul>
+                            <li><a href="#">Hopital de Toulouse</a></li>
+                            <li><a href="#">Optique 2000</a></li>
+                            <li><a href="#">Interval Challenge</a></li>
+                            <li><a href="#">8.6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
